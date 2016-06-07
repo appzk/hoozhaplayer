@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>简单的html示例</title>
+</head>
+<body>
+
+<div id="aaa">
+   <div id="playercontainer"></div>
+    <script type="text/javascript" src="/js/player/cyberplayer.js"></script>
+    <script type="text/javascript">
+        var player = cyberplayer("playercontainer").setup({
+        width : 580,
+        height : 433,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8",
+        ak : "0bddd4c0251744668eb43f42f3e71082",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "over"
+        });
+        </script>
+</div>
+</body>
+</html>
